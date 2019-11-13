@@ -1,1 +1,1 @@
-# good-home
+# https://ambitsite.github.io/good-home/
