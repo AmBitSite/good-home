@@ -31,8 +31,6 @@ button {
     align-items: center;
 }
 
-.nav__logo {}
-
 .nav-wrap {
     display: flex;
     padding: 0;
@@ -127,8 +125,6 @@ button {
     justify-content: space-between;
 }
 
-.header-caption-main-link-block__link {}
-
 .header-caption-last {
     display: flex;
     flex-direction: column;
@@ -143,7 +139,7 @@ button {
     line-height: 130%;
     text-align: right;
 }
-
+/*--------------------------------------------design----------------------------------------------------*/
 .design {
     display: flex;
     flex-direction: column;
@@ -209,7 +205,7 @@ button {
 .design-block-text_order-2 {
     order: 2;
 }
-
+/*-----------------------------------------------work-------------------------------------------------*/
 .work {
     display: flex;
     flex-direction: column;
@@ -285,7 +281,7 @@ button {
     line-height: 17px;
     color: #000000;
 }
-
+/*---------------------------------------------comment---------------------------------------------------*/
 .comment {
     width: 100%;
     display: flex;
@@ -341,8 +337,6 @@ button {
     margin-left: 102px;
     width: 125px
 }
-
-.comment-slider-item-block-star__item {}
 
 .comment-slider-item-block__text {
     display: inline-flex;
@@ -428,7 +422,7 @@ button {
     color: #838383;
     margin-right: 18px;
 }
-
+/*-------------------------------------------contact-----------------------------------------------------*/
 .contact {
     width: 100%;
     display: flex;
@@ -477,6 +471,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 4;
+    height: auto;
 }
 
 .contact-block-offer-form__header {
@@ -579,7 +574,7 @@ button {
     letter-spacing: 0.03em;
     color: #E8B86C;
 }
-
+/*------------------------------------------about------------------------------------------------------*/
 .about {
     width: 100%;
     display: flex;
@@ -673,7 +668,7 @@ button {
     color: #000000;
     opacity: 0.5;
 }
-
+/*-------------------------------------footer-----------------------------------------------------------*/
 .footer {
     display: flex;
     justify-content: center;
@@ -715,8 +710,30 @@ button {
     margin-bottom: 5px;
 }
 
-.footer-soc {}
-
 .footer-soc__text {
     padding-bottom: 20px;
+}
+
+/*----------------------------------------next page----------------------------------------------*/
+.header_soundproofing{
+    background-image: url(../img/list2-header.png);
+}
+.work_soundproofing{
+    background-image: url(../img/section-work_soundproofing-bg.png);
+}
+.work__header_soundproofing{
+    color:#000;
+}
+.work-block_soundproofing{
+    width: 878px;
+}
+.work-block-item_soundproofing{
+    width: 266px;
+    height: 211px;
+}
+.work-block-item-content__text_soundproofing{
+    width:175px;
+}
+.contact-block-offer-form_soundproofing{
+    background-image: url(../img/section-offer-form_soundproofing.png);
 }
