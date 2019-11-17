@@ -513,6 +513,7 @@ button {
     background: linear-gradient(180deg, #FFF506 0%, #E8B86C 100%);
     border: none;
     box-shadow: 1px 1px 22px rgba(255, 245, 6, 0.45);
+    cursor: pointer;
 }
 
 .contact-block-offer__bg-dicorated {
@@ -856,4 +857,28 @@ button {
 }
 input:focus.contact-block-offer-form__input::placeholder{
     color:transparent;
+}
+/*----------------------------------------threed page----------------------------------------------*/
+.header_stretch{
+    background-image: url(../img/header__stretch.png);
+}
+.individual_bg{
+    background-image: url(../img/individual-design-bg.png);
+}
+.individual-wrap{
+    margin:0;
+    
+}
+.individual-wrap>li{
+    list-style: none;
+    padding:0;
+}
+.individual__text_line-height{
+    line-height: 170%;
+}
+.stretch-design_bg{
+    background-image: url(../img/list3-design-bg.png);
+}
+.stretch-contact_bg{
+    background-image: url(../img/list3-offer-bg.png);
 }
