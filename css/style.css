@@ -294,7 +294,7 @@ button {
     flex-direction: column;
     align-items: center;
     background-image: url(../img/section-comment-bg.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: right;
 }
@@ -313,7 +313,7 @@ button {
     font-size: 48px;
     line-height: 59px;
     color: #000000;
-    margin-bottom: 182px;
+    margin-bottom: 52px;
     margin-top: 110px
 }
 
@@ -326,6 +326,7 @@ button {
     border: 8px solid #E8B86C;
     border-radius: 5px;
     margin-bottom: 70px;
+    position: relative;
 }
 
 .comment-slider-item-block__legend {
@@ -355,12 +356,14 @@ button {
     margin-left: 102px;
     margin-top: 40px;
     margin-bottom: 40px;
+    height: 270px;
 }
 
 .comment-slider-item__img-1 {
     position: absolute;
-    bottom: 100px;
-    right: -25px;
+    bottom: 50px;
+    right: -330px;
+    width:420px;
 }
 
 .comment-control {
@@ -379,6 +382,7 @@ button {
     background-size: 100;
     background-image: url(../img/arrows-sprite.png);
     outline: 0;
+    cursor: pointer;
 }
 
 .comment-control__prev {
@@ -1068,10 +1072,10 @@ input:focus.contact-block-offer-form__input::placeholder {
 
 .gallery-more {
     display: flex;
-    margin:0 auto;
-    margin-top:30px;
+    margin: 0 auto;
+    margin-top: 30px;
     margin-bottom: 60px;
-    border:1px solid #000;
+    border: 1px solid #000;
     border-radius: 32px;
     background-color: transparent;
     padding: 18px 104px;
@@ -1123,3 +1127,12 @@ input:focus.contact-block-offer-form__input::placeholder {
 .toTop:focus {
     outline: none;
 }
+
+.slider {
+    position: relative;
+    overflow: hidden;
+  }
+  .slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease; /* 0.6 длительность смены слайда в секундах */
+  }
