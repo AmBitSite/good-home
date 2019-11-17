@@ -930,9 +930,11 @@ input:focus.contact-block-offer-form__input::placeholder {
 .services__header {
     color: #fefefe;
 }
-.services-block-main{
+
+.services-block-main {
     justify-content: space-between;
 }
+
 .services-block {
     display: flex;
     width: 1200px;
@@ -946,15 +948,14 @@ input:focus.contact-block-offer-form__input::placeholder {
     background: #FEFEFE;
     box-shadow: 2px 8px 22px rgba(0, 0, 0, 0.17);
     border-radius: 5px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
     padding-bottom: 38px;
 }
 
 .services-block-item-wrap {
-    
     margin: 0;
     padding: 0;
-    margin-left:58px;
+    margin-left: 58px;
 }
 
 .services-block-item-wrap-item {
@@ -965,7 +966,7 @@ input:focus.contact-block-offer-form__input::placeholder {
     color: #838383;
     list-style: none;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 .services-block-item-wrap-item_active {
@@ -974,9 +975,151 @@ input:focus.contact-block-offer-form__input::placeholder {
     font-size: 24px;
     line-height: 29px;
     color: #000000;
-    padding-bottom:20px;
-    margin-top:38px;
+    padding-bottom: 20px;
+    margin-top: 38px;
 }
-.services-block-main-wrap{
-    margin-left:18px
+
+.services-block-main-wrap {
+    margin-left: 18px
+}
+
+/* ------------------------------------fifth page-------------------------------------------- */
+
+.portfolio-header {
+    background: linear-gradient(106.78deg, rgba(65, 71, 95, 0.75) 32.87%, rgba(232, 184, 108, 0.75) 99.25%);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/portfolio-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.portfolio__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    margin-top: 110px;
+    margin-bottom: 35px;
+}
+
+.portfolio__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #838383;
+    padding-bottom: 70px;
+}
+
+.portfolio-block {
+    width: 1200px;
+}
+
+.portfolio-block__header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.portfolio-block__line {
+    width: 100%;
+    border: 1px solid #000;
+    border-bottom: transparent;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px
+}
+
+.portfolio-block-img {
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.portfolio-block-img__item {
+    display: none;
+    width: 285px;
+    height: 285px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.portfolio-block-img__item:nth-child(-n+16) {
+    display: flex;
+}
+
+.gallery-more {
+    display: flex;
+    margin:0 auto;
+    margin-top:30px;
+    margin-bottom: 60px;
+    border:1px solid #000;
+    border-radius: 32px;
+    background-color: transparent;
+    padding: 18px 104px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.toTop {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #000000a1;
+    border: none;
+    bottom: 50px;
+    right: 80px;
+    z-index: 14;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+    border-radius: 3.5px;
+}
+
+.toTop>span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.toTop:hover {
+    background-color: #181818;
+}
+
+.toTop::before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: 9px;
+    margin-left: 18px;
+}
+
+.toTop:focus {
+    outline: none;
 }
