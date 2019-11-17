@@ -62,28 +62,32 @@ function nextSlide() {
     };
     arrSliderItem[correctNumberSlider].style.display = "flex";
     countSlider.innerText = arrSliderItem.length;
-    numberSlider.innerText = correctNumberSlider+1
+    numberSlider.innerText = correctNumberSlider + 1
 };
 nextSlide();
-
-btnNext.addEventListener("click", function(){
-    if(correctNumberSlider<=arrSliderItem.length-2){
-        correctNumberSlider+=1;
+function sliderr() {
+    if (correctNumberSlider <= arrSliderItem.length - 2) {
+        correctNumberSlider += 1;
         nextSlide();
     }
-    else{
+    else {
         correctNumberSlider = 0;
         nextSlide();
     }
+}
+btnNext.addEventListener("click", function () {
+    sliderr();
 });
-btnPrev.addEventListener("click", function(){
-        if(!correctNumberSlider==0){
-            correctNumberSlider-=1;
-            nextSlide();
-        }
-        else{
-            correctNumberSlider = 7;
-            correctNumberSlider-=1;
-            nextSlide();
-        };
+btnPrev.addEventListener("click", function () {
+    if (!correctNumberSlider == 0) {
+        correctNumberSlider -= 1;
+        nextSlide();
+    }
+    else {
+        correctNumberSlider = 7;
+        correctNumberSlider -= 1;
+        nextSlide();
+    };
 })
+
+ setInterval(sliderr, 3000)
