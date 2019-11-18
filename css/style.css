@@ -50,7 +50,18 @@ button {
     font-size: 16px;
     line-height: 20px;
 }
+.nav-wrap-item__link_active::after{
+    content:"";
+    width: 7px;
+    height: 7px;
+    background-color: #F1CD30;;
+    position: relative;
+    display: block;
+    left: 50%;
+    top: 6px;
+    border-radius: 50%;
 
+}
 .nav-tel {
     display: flex;
     align-items: center;
@@ -170,10 +181,35 @@ button {
     background: #FEFEFE;
     box-shadow: 2px 8px 22px rgba(0, 0, 0, 0.17);
     border-radius: 5px;
+    position: relative;
 }
 
 .design-block-text {
     padding: 40px 92px;
+}
+.design-block-lable_left{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left:50.8%;
+    top:44%;
+    border-top: 25px solid transparent;
+	border-left: 50px solid #fefefe;
+	border-bottom: 25px solid transparent;
+}
+.design-block-lable_right{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right:50.8%;
+    top:44%;
+    border-top: 25px solid transparent;
+	border-right: 50px solid #fefefe;
+	border-bottom: 25px solid transparent;
 }
 
 .design-block-text__header {
@@ -1069,7 +1105,17 @@ input:focus.contact-block-offer-form__input::placeholder {
 .portfolio-block-img__item:nth-child(-n+16) {
     display: flex;
 }
+.portfolio-block-img__item_2 {
+    display: none;
+    width: 285px;
+    height: 285px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
 
+.portfolio-block-img__item_2:nth-child(-n+16) {
+    display: flex;
+}
 .gallery-more {
     display: flex;
     margin: 0 auto;
@@ -1086,7 +1132,22 @@ input:focus.contact-block-offer-form__input::placeholder {
     color: #000000;
     cursor: pointer;
 }
-
+.gallery-more2 {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border: 1px solid #000;
+    border-radius: 32px;
+    background-color: transparent;
+    padding: 18px 104px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    cursor: pointer;
+}
 .toTop {
     position: fixed;
     width: 60px;

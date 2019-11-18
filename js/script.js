@@ -26,6 +26,22 @@ $(".gallery-more").click(function () {
         }
     }
 })
+$(".gallery-more2").click(function () {
+    if ($(".gallery-more2").text() === "View all") {
+        for (i = 0; i < document.getElementsByClassName("portfolio-block-img__item_2").length; i++) {
+            document.getElementsByClassName("portfolio-block-img__item_2")[i].style.display = "flex";
+        }
+        $(".gallery-more2").text("Hide")
+    }
+    else {
+        for (i = 0; i < document.getElementsByClassName("portfolio-block-img__item_2").length; i++) {
+            if (i > 8) {
+                document.getElementsByClassName("portfolio-block-img__item_2")[i].style.display = "none";
+            }
+            $(".gallery-more2").text("View all")
+        }
+    }
+})
 
 $(document).ready(function () {
     $('.popup-gallery').magnificPopup({
@@ -43,7 +59,22 @@ $(document).ready(function () {
         }
     });
 });
-
+$(document).ready(function () {
+    $('.popup-gallery2').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1]
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+        }
+    });
+});
 
 
 //-------------------------------slider------------------------------------
