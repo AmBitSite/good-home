@@ -827,6 +827,7 @@ button {
 
 .contact-block-offer-form_soundproofing {
     background-image: url(../img/section-offer-form_soundproofing.png);
+    border-radius: 6px;
 }
 
 .soundproofing {
@@ -919,7 +920,7 @@ button {
 
 .contact-block-offer-form__input_opacity {
     background-color: #fefefe80;
-    color: #fefefe80;
+    color: #000000c0;
 }
 
 .contact-block-offer-form__input_opacity::placeholder {
