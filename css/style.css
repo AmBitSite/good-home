@@ -50,18 +50,20 @@ button {
     font-size: 16px;
     line-height: 20px;
 }
-.nav-wrap-item__link_active::after{
-    content:"";
+
+.nav-wrap-item__link_active::after {
+    content: "";
     width: 7px;
     height: 7px;
-    background-color: #F1CD30;;
+    background-color: #F1CD30;
+    ;
     position: relative;
     display: block;
     left: 50%;
     top: 6px;
     border-radius: 50%;
-
 }
+
 .nav-tel {
     display: flex;
     align-items: center;
@@ -187,31 +189,57 @@ button {
 .design-block-text {
     padding: 40px 92px;
 }
-.design-block-lable_left{
+
+.design-block-lable_left {
     content: "";
     display: block;
     width: 0px;
     height: 0px;
     position: absolute;
-    left:50.8%;
-    top:44%;
+    left: 50.8%;
+    top: 44%;
     border-top: 25px solid transparent;
-	border-left: 50px solid #fefefe;
-	border-bottom: 25px solid transparent;
-}
-.design-block-lable_right{
-    content: "";
-    display: block;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    right:50.8%;
-    top:44%;
-    border-top: 25px solid transparent;
-	border-right: 50px solid #fefefe;
-	border-bottom: 25px solid transparent;
+    border-left: 50px solid #fefefe;
+    border-bottom: 25px solid transparent;
 }
 
+.design-block-lable_right {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right: 50.8%;
+    top: 44%;
+    border-top: 25px solid transparent;
+    border-right: 50px solid #fefefe;
+    border-bottom: 25px solid transparent;
+}
+
+.design-block-lable_top {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 41.8%;
+    top: 35.7%;
+    border-left: 20px solid transparent;
+    border-bottom: 40px solid #fefefe;
+    border-right: 20px solid transparent;
+}
+.design-block-lable_top-correct {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 41.8%;
+    top: 41.7%;
+    border-left: 20px solid transparent;
+    border-bottom: 40px solid #fefefe;
+    border-right: 20px solid transparent;
+}
 .design-block-text__header {
     margin: 0;
     padding: 0;
@@ -399,7 +427,7 @@ button {
     position: absolute;
     bottom: 50px;
     right: -330px;
-    width:420px;
+    width: 420px;
 }
 
 .comment-control {
@@ -990,6 +1018,7 @@ input:focus.contact-block-offer-form__input::placeholder {
     border-radius: 5px;
     margin-bottom: 50px;
     padding-bottom: 38px;
+    position: relative;
 }
 
 .services-block-item-wrap {
@@ -1105,6 +1134,7 @@ input:focus.contact-block-offer-form__input::placeholder {
 .portfolio-block-img__item:nth-child(-n+16) {
     display: flex;
 }
+
 .portfolio-block-img__item_2 {
     display: none;
     width: 285px;
@@ -1116,6 +1146,7 @@ input:focus.contact-block-offer-form__input::placeholder {
 .portfolio-block-img__item_2:nth-child(-n+16) {
     display: flex;
 }
+
 .gallery-more {
     display: flex;
     margin: 0 auto;
@@ -1132,6 +1163,7 @@ input:focus.contact-block-offer-form__input::placeholder {
     color: #000000;
     cursor: pointer;
 }
+
 .gallery-more2 {
     display: flex;
     margin: 0 auto;
@@ -1148,6 +1180,7 @@ input:focus.contact-block-offer-form__input::placeholder {
     color: #000000;
     cursor: pointer;
 }
+
 .toTop {
     position: fixed;
     width: 60px;
@@ -1188,12 +1221,3 @@ input:focus.contact-block-offer-form__input::placeholder {
 .toTop:focus {
     outline: none;
 }
-
-.slider {
-    position: relative;
-    overflow: hidden;
-  }
-  .slider__wrapper {
-    display: flex;
-    transition: transform 0.6s ease; /* 0.6 длительность смены слайда в секундах */
-  }
