@@ -1,4 +1,41 @@
 @media (max-width:1220px) {
+    .nav {
+        width: 580px;
+        align-items: flex-start;
+    }
+    .nav-wrap {
+        width: 50px;
+        height: 30px;
+        flex-direction: column;
+        background-image: url(../img/icon-burger.png);
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+    .nav-wrap-item {
+        padding: 5px;
+        display: none;
+    }
+    .nav-wrap:focus .nav-wrap-item {
+        display: flex;
+    }
+    .nav-wrap-item__link_active::after {
+        left: 105%;
+        top: -13px;
+    }
+    .header-caption {
+        width: 600px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-caption-main__header {
+        width: 400px;
+        margin-top: 40px;
+        font-size: 50px;
+    }
+    .header-caption-last {
+        align-self: flex-end;
+    }
     .toTop {
         right: 10px;
     }
@@ -36,44 +73,231 @@
         border-radius: 6px;
     }
     .design-block-lable_left {
-        border-right: 25px solid transparent;
-        border-top: 50px solid #fefefe;
-        border-left: 25px solid transparent;
-        left: 43.8%;
-        top: 47%;
-    }
-    .design-block-lable_right {
-        right: 48.8%;
-        top: 44.6%;
-        border-right: 25px solid transparent;
-        border-bottom: 50px solid #fefefe;
-        border-left: 25px solid transparent;
-    }
-    .contact-block{
-        width:600px;
-    }
-    .contact-block-offer{
-        width: 600px;
-        display: flex;
-    }
-    .contact-block-offer-form{
-        width:95%;
-        background-size: cover;
-    }
-    .contact-block-present__img{
         display: none;
     }
-    .contact-block-present{
+    .design-block-lable_right {
+        display: none;
+    }
+    .contact-block {
+        width: 600px;
+    }
+    .contact-block-offer {
+        width: 600px;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-block-offer__bg-dicorated {
+        display: none;
+    }
+    .contact-block-offer-form {
+        width: 95%;
+        background-size: cover;
+    }
+    .contact-block-present__img {
+        display: none;
+    }
+    .contact-block-present {
         width: 600px;
         justify-content: center;
     }
-    .comment-block{
+    .comment-block {
         width: 600px;
     }
-    .comment-slider-item__img-1{
+    .comment-slider-item__img-1 {
         display: none;
     }
-    .communications__header{
+    .communications__header {
         width: 580px;
+    }
+    .comment-slider-item-block {
+        width: 580px;
+    }
+    .comment-slider-item-block__text {
+        margin-left: 0;
+    }
+    .about-block {
+        width: 580px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-block {
+        width: auto;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .work-block {
+        width: 600px;
+    }
+    .portfolio-block {
+        width: 600px;
+    }
+    .portfolio-block-img {
+        width: 610px;
+    }
+    .services-block {
+        width: 600px;
+        justify-content: space-around;
+    }
+    .design-block-lable_top {
+        display: none;
+    }
+    .design-block-lable_top-correct {
+        display: none;
+    }
+}
+
+@media (max-width:620px) {
+    .nav {
+        width: 300px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-tel {
+        order: 2;
+        margin: 20px 0;
+    }
+    .nav-wrap {
+        order: 3;
+    }
+    .header-caption {
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-caption-main__header {
+        width: 300px;
+        margin-top: 40px;
+        font-size: 50px;
+    }
+    .work-block_soundproofing {
+        width: 300px;
+        justify-content: space-around
+    }
+    .soundproofing-block {
+        width: 300px;
+    }
+    .soundproofing-text-block {
+        width: 300px;
+    }
+    .soundproofing-text-block:nth-child(1) {
+        width: 300px;
+    }
+    .soundproofing-text-block:nth-child(4) {
+        width: 300px;
+    }
+    .design-block {
+        width: 300px;
+        flex-direction: column;
+    }
+    .contact-block {
+        width: 300px;
+    }
+    .contact-block-offer {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-block-present {
+        width: 300px;
+        justify-content: center;
+    }
+    .comment-block {
+        width: 300px;
+    }
+    .comment-slider-item-block {
+        width: 300px;
+        padding: 0;
+    }
+    .about-block {
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-block {
+        width: 300px;
+        justify-content: space-around;
+    }
+    .portfolio-block {
+        width: 300px;
+    }
+    .portfolio-block-img {
+        width: 310px;
+    }
+    .services-block {
+        width: 300px;
+        justify-content: space-around;
+    }
+    .design-block-text {
+        padding: 5px 10px;
+    }
+    .services-block-item {
+        width: 310px;
+    }
+    .services-block-item>img {
+        width: 310px;
+    }
+    .comment__header {
+        width: 300px;
+    }
+    .contact-block-offer-form {
+        padding: 5px 5px;
+        width:100%
+    }
+    .comment-slider-item-block__text {
+        width: 280px;
+        height: 380px;
+        padding:0 5px;
+        margin-top:10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .contact-block-offer-form__input {
+        width: 300px;
+        padding: 5px 5px;
+        font-size: 16px;
+    }
+    .contact-block-present-gift{
+        width: 310px;
+        height: 310px;
+    }
+    .contact-block-present-gift__text{
+        font-size: 16px;
+    }
+    .about-member-block__decorated{
+        display: none;
+    }
+    .about-member:nth-child(1){
+        width: 300px;
+        padding-left: 0;
+    }
+    .about-member:nth-child(2){
+        width: 300px;
+        padding-right: 0px;
+    }
+    .about-member-block__img{
+        width: 300px;
+    }
+    .communications__header{
+        width: 300px;
+    }
+    .soundproofing-text-block__header{
+        font-size: 30px;
+    }
+    .soundproofing-text-block__text{
+        font-size: 16px;
+        padding:0 5px;
+    }
+    .design__header{
+        width: 300px;
+    }
+    .contact__header{
+        width: 300px;
+    }
+    .header-caption-main__header{
+        font-size: 30px;
     }
 }
