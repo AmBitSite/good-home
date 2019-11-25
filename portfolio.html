@@ -558,9 +558,9 @@
                     <span class="contact-block-offer-form__header">Send your contact details and we will call you
                         back</span>
                     <input type="text" class="contact-block-offer-form__input" placeholder="Name" name="name">
-                    <input type="tel" class="contact-block-offer-form__input" placeholder="Phone" name="phone">
+                    <input type="text" pattern="[0-9,+,(,),]{10,15}" class="contact-block-offer-form__input" placeholder="Phone" name="phone">
                     <input type="text" class="contact-block-offer-form__input" placeholder="Comment" name="comment">
-                    <input type="submit" class="contact-block-offer-form__input contact-block-offer-form__input_submit"
+                    <input type="submit" disabled class="contact-block-offer-form__input contact-block-offer-form__input_submit"
                         value="Send" name="celling">
                 </form>
                 <div class="contact-block-offer__bg-dicorated"></div>
