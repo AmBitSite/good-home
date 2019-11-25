@@ -9,7 +9,7 @@ $('.toTop').click(function () {
     $('body,html').animate({ scrollTop: 0 }, 800);
 });
 
-
+// ---------------------------------------gallery---------------------------------------------------
 $(".gallery-more").click(function () {
     if ($(".gallery-more").text() === "View all") {
         for (i = 0; i < document.getElementsByClassName("portfolio-block-img__item").length; i++) {
@@ -121,4 +121,100 @@ btnPrev.addEventListener("click", function () {
     };
 })
 
- setInterval(sliderr, 3000)
+setInterval(sliderr, 5000);
+//------------------------validate form--------------------------------------------
+let form = document.querySelector(".contact-block-offer-form");
+let form1 = document.querySelector(".communication-block");
+let submit = document.querySelector(".contact-block-offer-form__input_submit");
+let inputName = document.querySelector(".contact-block-offer-form__input_name");
+let inputTel = document.querySelector(".contact-block-offer-form__input_tel");
+form.addEventListener("click", () => {
+    if (inputName.value !== "" && inputTel !== "") {
+        submit.removeAttribute("disabled")
+    }
+    else { submit.setAttribute("disabled", "true") }
+})
+if (form1) {
+    let submit = document.querySelector(".contact-block-offer-form__input_submit1");
+    let inputName = document.querySelector(".contact-block-offer-form__input_name1");
+    let inputTel = document.querySelector(".contact-block-offer-form__input_tel1");
+    form1.addEventListener("click", () => {
+
+        if (inputName.value !== "" && inputTel !== "") {
+            submit.removeAttribute("disabled")
+        }
+        else { submit.setAttribute("disabled", "true") }
+    })
+}
+window.onload = () => {
+    let test = document.querySelector(".success")
+    setTimeout(() => {
+        if (window.location.search === "?mail=success") {
+            test.classList.remove("d-none");
+            test.classList.add("classAnimete-message");
+        }
+        else if (window.location.search === "?mail=error&type=forbidden_symbols") {
+            document.querySelector(".error").classList.remove("d-none");
+            document.querySelector(".error").classList.add("classAnimete-message");
+        }
+    }, 1000)
+
+}
+
+//------------------------------------------------------scroll to------------------------------
+let headerBtn = document.querySelector(".header-caption-main__btn");
+
+
+
+function currentYPosition() {
+    // Firefox, Chrome, Opera, Safari
+    if (self.pageYOffset) return self.pageYOffset;
+    // Internet Explorer 6 - standards mode
+    if (document.documentElement && document.documentElement.scrollTop)
+        return document.documentElement.scrollTop;
+    // Internet Explorer 6, 7 and 8
+    if (document.body.scrollTop) return document.body.scrollTop;
+    return 0;
+}
+
+
+function elmYPosition(eID) {
+    var elm = document.getElementById(eID);
+    var y = elm.offsetTop;
+    var node = elm;
+    while (node.offsetParent && node.offsetParent != document.body) {
+        node = node.offsetParent;
+        y += node.offsetTop;
+    } return y;
+}
+
+
+function smoothScroll(eID) {
+    var startY = currentYPosition();
+    var stopY = elmYPosition(eID);
+    var distance = stopY > startY ? stopY - startY : startY - stopY;
+    if (distance < 100) {
+        scrollTo(0, stopY); return;
+    }
+    var speed = Math.round(distance / 100);
+    if (speed >= 20) speed = 20;
+    var step = Math.round(distance / 25);
+    var leapY = stopY > startY ? startY + step : startY - step;
+    var timer = 0;
+    if (stopY > startY) {
+        for ( var i=startY; i<stopY; i+=step ) {
+            setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+            leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+        } return;
+    }
+    for ( var i=startY; i>stopY; i-=step ) {
+        setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+        leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+    }
+}
+if(headerBtn){
+    headerBtn.addEventListener("click",()=>{
+        elmYPosition("form");
+        smoothScroll("form")
+    })
+}

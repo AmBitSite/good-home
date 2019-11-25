@@ -13,6 +13,12 @@
 </head>
 
 <body>
+    <div class="success d-none">
+        <span>Your application has been sent</span>
+    </div>
+    <div class="error d-none">
+        <span>Your letter contains invalid characters</span>
+    </div>
     <button class="toTop"><span>UP</span></button>
     <header class="header header_soundproofing">
         <nav class="nav">
@@ -37,7 +43,8 @@
                     <a href="index.html" class="nav-wrap-item__link">Design of premises</a>
                 </li>
                 <li class="nav-wrap-item">
-                    <a href="soundproofing-of-premises.html" class="nav-wrap-item__link nav-wrap-item__link_active">Soundproofing of premises</a>
+                    <a href="soundproofing-of-premises.html"
+                        class="nav-wrap-item__link nav-wrap-item__link_active">Soundproofing of premises</a>
                 </li>
                 <li class="nav-wrap-item">
                     <a href="stretch-ceiling.html" class="nav-wrap-item__link">Stretch ceiling</a>
@@ -61,7 +68,9 @@
                 <div class="header-caption-main-link">
                     <span class="header-caption-main-link__text">Follow us:</span>
                     <div class="header-caption-main-link-block">
-                        <a class="header-caption-main-link-block__link" href="https://www.facebook.com/GoodHome-112659453482194/?modal=admin_todo_tour" target="_blank">
+                        <a class="header-caption-main-link-block__link"
+                            href="https://www.facebook.com/GoodHome-112659453482194/?modal=admin_todo_tour"
+                            target="_blank">
                             <img src="img/fb-icon.png" alt="">
                         </a>
                         <a class="header-caption-main-link-block__link" href="">
@@ -170,14 +179,20 @@
         <h2 class="contact__header">Individual offer</h2>
         <div class="contact-block">
             <div class="contact-block-offer">
-                <form action="" class="contact-block-offer-form contact-block-offer-form_soundproofing">
+                <form id="form" action="mail.php" method="post"
+                    class="contact-block-offer-form contact-block-offer-form_soundproofing">
                     <span class="contact-block-offer-form__header">ENTER the area and the number of rooms and we
                         will make an individual offer</span>
-                    <input type="text" class="contact-block-offer-form__input" placeholder="Name">
-                    <input type="number" class="contact-block-offer-form__input" placeholder="Number of rooms">
-                    <input type="tel" class="contact-block-offer-form__input" placeholder="Phone">
+                    <input type="text" pattern="[a-z,A-Z]{2,15}"
+                        class="contact-block-offer-form__input contact-block-offer-form__input_name" placeholder="Name"
+                        name="name">
+                    <input type="number" class="contact-block-offer-form__input" placeholder="Number of rooms"
+                        name="rooms">
+                    <input type="tel" pattern="[0-9,+,(,),]{10,15}"
+                        class="contact-block-offer-form__input contact-block-offer-form__input_tel" placeholder="Phone"
+                        name="phone">
                     <input type="submit" class="contact-block-offer-form__input contact-block-offer-form__input_submit"
-                        value="Send">
+                        value="Send" name="soundproofing">
                 </form>
                 <div class="contact-block-offer__bg-dicorated"></div>
             </div>
@@ -334,15 +349,18 @@
     </section>
     <section class="communications">
         <h2 class="communications__header">Send your contact details and we will call you back</h2>
-        <form action="" class="communication-block">
+        <form action="mail.php" method="post" class="communication-block">
+            <input type="text" pattern="[a-z,A-Z]{2,15}"
+                class="contact-block-offer-form__input contact-block-offer-form__input_opacity contact-block-offer-form__input_name1"
+                placeholder="Name" name="name">
+            <input type="tel" pattern="[0-9,+,(,),]{10,15}"
+                class="contact-block-offer-form__input contact-block-offer-form__input_opacity contact-block-offer-form__input_tel1"
+                placeholder="Phone" name="phone">
             <input type="text" class="contact-block-offer-form__input contact-block-offer-form__input_opacity"
-                placeholder="Name">
-            <input type="tel" class="contact-block-offer-form__input contact-block-offer-form__input_opacity"
-                placeholder="Phone">
-                <input type="text" class="contact-block-offer-form__input contact-block-offer-form__input_opacity"
-                placeholder="Comment">
-            <input type="submit" class="contact-block-offer-form__input contact-block-offer-form__input_submit"
-                value="Send">
+                placeholder="Comment" name="comment">
+            <input type="submit" disabled
+                class="contact-block-offer-form__input contact-block-offer-form__input_submit1" value="Send"
+                name="calling_type_2">
         </form>
     </section>
     <section class="about">
@@ -383,7 +401,8 @@
                     <a href="stretch-ceiling.html" class="footer-nav-wrap-item__link">Stretch ceiling</a>
                 </li>
                 <li class="footer-nav-wrap-item">
-                    <a href="soundproofing-of-premises.html" class="footer-nav-wrap-item__link">Soundproofing of premise</a>
+                    <a href="soundproofing-of-premises.html" class="footer-nav-wrap-item__link">Soundproofing of
+                        premise</a>
                 </li>
                 <li class="footer-nav-wrap-item">
                     <a href="index.html" class="footer-nav-wrap-item__link">Design and repair of premises</a>
@@ -409,7 +428,8 @@
             <div class="footer-soc">
                 <span class="footer-soc__text footer-nav-wrap-item__link_active">Follow us</span>
                 <div class="header-caption-main-link-block">
-                    <a class="header-caption-main-link-block__link" href="https://www.facebook.com/GoodHome-112659453482194/?modal=admin_todo_tour" target="_blank">
+                    <a class="header-caption-main-link-block__link"
+                        href="https://www.facebook.com/GoodHome-112659453482194/?modal=admin_todo_tour" target="_blank">
                         <img src="img/fb-icon.png" alt="">
                     </a>
                     <a class="header-caption-main-link-block__link" href="">

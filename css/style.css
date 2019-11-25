@@ -585,7 +585,13 @@ button {
     box-shadow: 1px 1px 22px rgba(255, 245, 6, 0.45);
     cursor: pointer;
 }
-
+.contact-block-offer-form__input_submit1 {
+    margin-top: 15px;
+    background: linear-gradient(180deg, #FFF506 0%, #E8B86C 100%);
+    border: none;
+    box-shadow: 1px 1px 22px rgba(255, 245, 6, 0.45);
+    cursor: pointer;
+}
 .contact-block-offer__bg-dicorated {
     width: 444px;
     height: 290px;
@@ -1253,7 +1259,7 @@ input:focus.contact-block-offer-form__input::placeholder {
     position: absolute;
     top: 45px;
     left: 70px;
-    display: flex;
+    display: none;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -1308,4 +1314,78 @@ input:focus.contact-block-offer-form__input::placeholder {
 
 .menu__item:hover {
     background-color: #CFD8DC;
+}
+input:disabled{
+    background: linear-gradient(180deg, rgba(189, 189, 189, 0.253) 0%, rgba(58, 58, 58, 0.452) 100%);
+    box-shadow: 1px 1px 22px rgba(58, 58, 58, 0.452);
+}
+input:invalid{
+    border:1px solid red
+}
+input:valid{
+    border:1px solid green;
+}
+input:-internal-autofill-selected{
+    background-color: transparent !important;
+}
+.success{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    opacity: .7;
+}
+.success>span{
+    background: linear-gradient(180deg, #FFF506 0%, #E8B86C 100%);
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.error{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    opacity: .7;
+}
+.error>span{
+    background: linear-gradient(180deg, rgb(252, 74, 74) 0%, rgb(148, 0, 0) 100%);
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.classAnimete-message{
+    animation-name: animatedDisplay;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:forwards
+}
+@keyframes animatedDisplay{
+    0%{
+        display: flex;
+        opacity: 0;
+    }
+    50%{
+        display: flex;
+        opacity: .7;
+    }
+    99%{
+        display: flex;
+        opacity: 0;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+    }
+}
+.d-none{
+    display: none;
 }

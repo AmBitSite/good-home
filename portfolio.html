@@ -14,6 +14,12 @@
 </head>
 
 <body>
+    <div class="success d-none">
+        <span>Your application has been sent</span>
+    </div>
+    <div class="error d-none">
+        <span>Your letter contains invalid characters</span>
+    </div>
     <button class="toTop"><span>UP</span></button>
     <header class="portfolio-header">
         <nav class="nav">
@@ -547,14 +553,15 @@
         <h2 class="contact__header">Individual offer</h2>
         <div class="contact-block">
             <div class="contact-block-offer">
-                <form action="" class="contact-block-offer-form contact-block-offer-form_soundproofing">
+                <form id="form" action="mail.php" method="post"
+                    class="contact-block-offer-form contact-block-offer-form_soundproofing">
                     <span class="contact-block-offer-form__header">Send your contact details and we will call you
                         back</span>
-                    <input type="text" class="contact-block-offer-form__input" placeholder="Name">
-                    <input type="tel" class="contact-block-offer-form__input" placeholder="Phone">
-                    <input type="text" class="contact-block-offer-form__input" placeholder="Comment">
+                    <input type="text" class="contact-block-offer-form__input" placeholder="Name" name="name">
+                    <input type="tel" class="contact-block-offer-form__input" placeholder="Phone" name="phone">
+                    <input type="text" class="contact-block-offer-form__input" placeholder="Comment" name="comment">
                     <input type="submit" class="contact-block-offer-form__input contact-block-offer-form__input_submit"
-                        value="Send">
+                        value="Send" name="celling">
                 </form>
                 <div class="contact-block-offer__bg-dicorated"></div>
             </div>
