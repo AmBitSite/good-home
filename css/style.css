@@ -133,9 +133,10 @@ button {
 }
 
 .header-caption-main-link-block {
-    width: 90px;
+    width: 180px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .header-caption-last {
@@ -1060,7 +1061,10 @@ input:focus.contact-block-offer-form__input::placeholder {
 .services-block-main-wrap {
     margin-left: 18px
 }
-
+.header-caption-main-link-block__link{
+    margin-left:10px;
+    margin-bottom: 5px;
+}
 /* ------------------------------------fifth page-------------------------------------------- */
 
 .portfolio-header {

@@ -62,6 +62,34 @@
             </a>
         </nav>
     </header>
+    <section class="contact">
+        <h2 class="contact__header">Individual offer</h2>
+        <div class="contact-block">
+            <div class="contact-block-offer">
+                <form id="form" action="mail.php" method="post"
+                    class="contact-block-offer-form contact-block-offer-form_soundproofing">
+                    <span class="contact-block-offer-form__header">Send your contact details and we will call you
+                        back</span>
+                    <input type="text" class="contact-block-offer-form__input" placeholder="Name" name="name">
+                    <input type="text" pattern="[0-9,+,(,),]{10,15}" class="contact-block-offer-form__input"
+                        placeholder="Phone" name="phone">
+                    <input type="text" class="contact-block-offer-form__input" placeholder="Comment" name="comment">
+                    <input type="submit" disabled
+                        class="contact-block-offer-form__input contact-block-offer-form__input_submit" value="Send"
+                        name="celling">
+                </form>
+                <div class="contact-block-offer__bg-dicorated"></div>
+            </div>
+            <div class="contact-block-present">
+                <div class="contact-block-present__bg-dicorated"></div>
+                <img class="contact-block-present__img" src="img/section-offer-img.png" alt="">
+                <div class="contact-block-present-gift">
+                    <img class="contact-block-present-gift__img" src="img/section-offer-gift.png" alt="">
+                    <span class="contact-block-present-gift__text">FREE interior design with $50K renovation</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="portfolio">
         <h2 class="portfolio__header">Our portfolio</h2>
         <span class="portfolio__text">Here are some examples of our work.</span>
@@ -71,15 +99,15 @@
             </h2>
             <hr class="portfolio-block__line">
             <div class="portfolio-block-img popup-gallery">
-                <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/1.1.jpg">
+                <!-- <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/1.1.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/1.png" alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/2.1.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/2.png" alt="">
                 </a>
-                <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/3.1.jpg">
+                <!-- <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/3.1.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/3.png" alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/4.1.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/4.png" alt="">
                 </a>
@@ -113,9 +141,9 @@
                 <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/14.1.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/14.png" alt="">
                 </a>
-                <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/15.1.jpg">
+                <!-- <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/15.1.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/15.png" alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/16.1.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/16.png" alt="">
                 </a>
@@ -149,7 +177,7 @@
                 <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/26.1.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/26.png" alt="">
                 </a>
-                <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/27.1.jpeg">
+                <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/27.1.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/27.png" alt="">
                 </a>
                 <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/28.1.jpg">
@@ -158,9 +186,9 @@
                 <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/29.1.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/29.png" alt="">
                 </a>
-                <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/30.1.jpg">
+                <!-- <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/30.1.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/30.png" alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item image-popup-zoom" href="img/portfolio-photo/31.1.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/portfolio-photo/31.png" alt="">
                 </a>
@@ -173,25 +201,25 @@
             </h2>
             <hr class="portfolio-block__line">
             <div class="portfolio-block-img popup-gallery2">
-                <a class="portfolio-block-img__item_2  image-popup-zoom" href="img/construction-photo/1.jpeg">
+                <!-- <a class="portfolio-block-img__item_2  image-popup-zoom" href="img/construction-photo/1.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/1.png"
                         alt="">
-                </a>
+                </a> -->
                 <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/2.jpg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/2.jpg" alt="">
                 </a> -->
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/3.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/3.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/3.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/4.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/4.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/5.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/5.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/5.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/6.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/6.png"
                         alt="">
@@ -200,22 +228,22 @@
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/7.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/8.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/8.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/8.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/9.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/9.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/10.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/10.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/10.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/11.JPG">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/11.JPG">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/11.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/12.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/12.png"
                         alt="">
@@ -228,26 +256,26 @@
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/14.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/15.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/15.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/15.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/16.jpeg">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/16.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/16.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/17.jpeg">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/17.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/17.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/18.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/18.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/19.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/19.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/19.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/20.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/20.png"
                         alt="">
@@ -256,62 +284,62 @@
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/21.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/22.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/22.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/22.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/23.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/23.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/24.JPEG">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/24.JPEG">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/24.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/25.jpeg">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/25.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/25.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/26.jpeg">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/26.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/26.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/27.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/27.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/28.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/28.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/28.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/29.jpeg">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/29.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/29.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/30.jpeg">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/30.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/30.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/31.jpeg">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/31.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/31.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/32.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/32.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/33.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/33.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/33.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/34.jpeg">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/34.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/34.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/35.jpeg">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/35.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/35.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/36.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/36.png"
                         alt="">
@@ -320,19 +348,19 @@
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/37.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/38.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/38.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/38.png"
                         alt="">
-                </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/39.jpeg">
+                </a> -->
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/39.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/39.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/4o.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/40.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/41.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/41.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/41.png"
                         alt="">
                 </a>
@@ -350,13 +378,13 @@
                 </a>
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/45.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/45.png"
-                        alt="">
+                        alt=""> -->
                 </a>
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/46.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/46.png"
                         alt="">
                 </a>
-                <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/47.jpeg">
+                <!-- <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/47.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/47.png"
                         alt="">
                 </a>
@@ -399,7 +427,7 @@
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/57.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/57.png"
                         alt="">
-                </a>
+                </a> -->
                 <a class="portfolio-block-img__item_2 image-popup-zoom" href="img/construction-photo/58.jpeg">
                     <img style="width:100%; object-fit:cover; cursor:pointer;" src="img/construction-photo/58.png"
                         alt="">
@@ -549,32 +577,6 @@
             <button class="comment-control-btn comment-control__next"></button>
         </div>
     </section>
-    <section class="contact">
-        <h2 class="contact__header">Individual offer</h2>
-        <div class="contact-block">
-            <div class="contact-block-offer">
-                <form id="form" action="mail.php" method="post"
-                    class="contact-block-offer-form contact-block-offer-form_soundproofing">
-                    <span class="contact-block-offer-form__header">Send your contact details and we will call you
-                        back</span>
-                    <input type="text" class="contact-block-offer-form__input" placeholder="Name" name="name">
-                    <input type="text" pattern="[0-9,+,(,),]{10,15}" class="contact-block-offer-form__input" placeholder="Phone" name="phone">
-                    <input type="text" class="contact-block-offer-form__input" placeholder="Comment" name="comment">
-                    <input type="submit" disabled class="contact-block-offer-form__input contact-block-offer-form__input_submit"
-                        value="Send" name="celling">
-                </form>
-                <div class="contact-block-offer__bg-dicorated"></div>
-            </div>
-            <div class="contact-block-present">
-                <div class="contact-block-present__bg-dicorated"></div>
-                <img class="contact-block-present__img" src="img/section-offer-img.png" alt="">
-                <div class="contact-block-present-gift">
-                    <img class="contact-block-present-gift__img" src="img/section-offer-gift.png" alt="">
-                    <span class="contact-block-present-gift__text">FREE interior design with $50K renovation</span>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="about">
         <h2 class="about__header">Our team</h2>
         <div class="about-block">
@@ -603,7 +605,7 @@
     <footer class="footer">
         <div class="footer-block">
             <a href="index.html" class="nav__logo">
-                <img src="img/logo.png" alt="logo">
+                <img src="img/logo-2.png" alt="logo">
             </a>
             <ul class="footer-nav-wrap">
                 <li class="footer-nav-wrap-item">
@@ -644,7 +646,7 @@
                         href="https://www.facebook.com/GoodHome-112659453482194/?modal=admin_todo_tour" target="_blank">
                         <img src="img/fb-icon.png" alt="">
                     </a>
-                    <a class="header-caption-main-link-block__link" href="">
+                    <a class="header-caption-main-link-block__link" href="https://www.instagram.com/goodhome_repairs" target="_blank">
                         <img src="img/insta-icon.png" alt="">
                     </a>
                 </div>

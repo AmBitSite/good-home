@@ -365,4 +365,15 @@
         left: 0;
         bottom: -50px;
     }
+    .work-block-item{
+        margin-bottom: 5px;
+        width: 310px;
+        height: auto;
+    }
+    .work-block-item-content{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
