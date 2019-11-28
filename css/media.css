@@ -79,6 +79,7 @@
     }
     .work-img_alboum{
         width: 640px;
+        height: 420px;
     }
     .soundproofing-block {
         width: 600px;
@@ -217,10 +218,13 @@
     .work-img_alboum{
         width: 310px;
         margin-right: 0;
+        height: 217px;
+        margin-bottom: 10px;
     }
     .work-img_portret{
         width: 310px;
         margin-right: 0;
+        margin-bottom: 10px;
     }
     .soundproofing-block {
         width: 300px;
