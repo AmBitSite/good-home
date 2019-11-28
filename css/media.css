@@ -80,6 +80,7 @@
     .work-img_alboum{
         width: 640px;
         height: 420px;
+        object-fit: contain;
     }
     .soundproofing-block {
         width: 600px;
@@ -220,6 +221,7 @@
         margin-right: 0;
         height: 217px;
         margin-bottom: 10px;
+        object-fit: contain;
     }
     .work-img_portret{
         width: 310px;
