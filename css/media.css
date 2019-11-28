@@ -74,6 +74,12 @@
         width: 600px;
         justify-content: space-around
     }
+    .work-img-block{
+        width: 640px;
+    }
+    .work-img_alboum{
+        width: 640px;
+    }
     .soundproofing-block {
         width: 600px;
     }
@@ -204,6 +210,17 @@
     .work-block_soundproofing {
         width: 300px;
         justify-content: space-around
+    }
+    .work-img-block{
+        width: 310px;
+    }
+    .work-img_alboum{
+        width: 310px;
+        margin-right: 0;
+    }
+    .work-img_portret{
+        width: 310px;
+        margin-right: 0;
     }
     .soundproofing-block {
         width: 300px;

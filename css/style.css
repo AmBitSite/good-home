@@ -825,7 +825,19 @@ button {
     width: 266px;
     height: 211px;
 }
-
+.work-img-block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1240px;
+}
+.work-img_alboum{
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.work-img_portret{
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
 .work-block-item-content__text_soundproofing {
     width: 175px;
 }
