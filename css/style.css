@@ -1076,6 +1076,7 @@ input:focus.contact-block-offer-form__input::placeholder {
 .header-caption-main-link-block__link{
     margin-left:10px;
     margin-bottom: 5px;
+    width: 35px;
 }
 /* ------------------------------------fifth page-------------------------------------------- */
 
