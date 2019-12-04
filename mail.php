@@ -8,12 +8,12 @@ function error($type)
 
 function checkSymbol($str)
 {
-  if (!preg_match("#^[aA-zZ0-9\-_\s]+$#", $str)) {
+  if (!preg_match("#^[aA-zZаА-яЯ0-9\-_\s]+$#", $str)) {
     error('forbidden_symbols');
   }
 }
 
-$to = 'frontenddevelop1@gmail.com'; // Почта получателя
+$to = 'alkoz.sale@gmail.com'; // Почта получателя
 
 /**
  * Скрипт для отправления заявки "Перезвонить"
